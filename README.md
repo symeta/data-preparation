@@ -23,9 +23,6 @@ the snapshot of s3 bucket as shown as below:
 
 ![1](https://user-images.githubusercontent.com/97269758/160239260-d6dee628-b269-48d9-b65f-11dfbfe54914.png)
 
-
-![Screen Shot 2022-03-26 at 7 29 14 PM](https://user-images.githubusercontent.com/97269758/160237363-cd8412ba-7d02-44dd-b8d4-c6c3ebce09d0.png)
-
 ![Screen Shot 2022-03-26 at 7 30 41 PM](https://user-images.githubusercontent.com/97269758/160237427-67374731-e2b6-45f9-8024-ff87a37be06f.png)
 
 compression is very important for data processing, choosing the right compression algorithm greatly saves time and cost.
