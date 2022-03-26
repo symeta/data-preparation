@@ -10,3 +10,11 @@ network route is designed as below to achieve an optimized route to transfer the
 
 It is essential to download these data from Baidu Netdisk manually to the windows EC2. After that, can use aws cli installed on windows EC2 to unzip the file in batch and push them to S3 bucket.
 
+to unzip those files in batch:
+```
+unzip -d /dir/ *.zip
+```
+to transfer those unzipped files to specific s3 bucket:
+```
+aws s3 cp d:/data s3://<bucket name>/raw --recursive
+```
