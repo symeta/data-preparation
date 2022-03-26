@@ -31,7 +31,7 @@ The steps below shows how to conver the raw data which is initially stored as tx
 
 to create a meta data, a database namespace in glue console, and finds it in athena console afterwards.
 
-![3](https://user-images.githubusercontent.com/97269758/160239427-7de8d9b6-828e-4613-b250-1755d836ca8e.png)
+![3](https://user-images.githubusercontent.com/97269758/160239463-9d690852-9d9a-45ca-98fa-a8208046285b.png)
 
 ![Screen Shot 2022-03-26 at 8 09 46 PM](https://user-images.githubusercontent.com/97269758/160238755-4d4c1dab-7440-4772-b540-0a8226311b8b.png)
 
