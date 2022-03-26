@@ -33,6 +33,8 @@ to create a meta data, a database namespace in glue console, and finds it in ath
 
 ![3](https://user-images.githubusercontent.com/97269758/160239463-9d690852-9d9a-45ca-98fa-a8208046285b.png)
 
+athena console snapshot:
+
 ![Screen Shot 2022-03-26 at 8 09 46 PM](https://user-images.githubusercontent.com/97269758/160238755-4d4c1dab-7440-4772-b540-0a8226311b8b.png)
 
 to execute the sql query in athena console to create a table mapping raw txt data.
