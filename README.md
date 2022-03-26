@@ -99,4 +99,7 @@ SELECT ticker,
 	datadate
 FROM raw_txt;
 ```
+the partitioned data is stored in s3 as below:
+
+![Screen Shot 2022-03-26 at 8 16 23 PM](https://user-images.githubusercontent.com/97269758/160239032-76966a93-0ffa-4ea8-a124-9c19d1aed85b.png)
 
