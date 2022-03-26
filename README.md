@@ -35,7 +35,7 @@ to create a meta data, a database namespace in glue console, and finds it in ath
 
 athena console snapshot:
 
-![Screen Shot 2022-03-26 at 8 09 46 PM](https://user-images.githubusercontent.com/97269758/160238755-4d4c1dab-7440-4772-b540-0a8226311b8b.png)
+![4](https://user-images.githubusercontent.com/97269758/160239525-b64398bd-301b-4105-8738-00dc8d4f9cd1.png)
 
 to execute the sql query in athena console to create a table mapping raw txt data.
 
@@ -57,7 +57,7 @@ CREATE EXTERNAL TABLE raw_txt (
 ) 
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde' 
 WITH SERDEPROPERTIES ("separatorChar" = "\t")
-LOCATION 's3://a-minsheng-raw/raw-txt/' 
+LOCATION 's3://a--raw/raw-txt/' 
 TBLPROPERTIES ('skip.header.line.count' = '1');
 ```
 to execute the sql query in athena console to create a table with datadate as partition and parquet as data format.
@@ -79,7 +79,7 @@ CREATE EXTERNAL TABLE raw_date_parquet (
 ) 
 PARTITIONED BY (datadate string)
 STORED AS parquet
-LOCATION 's3://a-minsheng-raw/raw-date-parquet/'
+LOCATION 's3://a--raw/raw-date-parquet/'
 ```
 
 to execute the sql query in athena console to convert the data in raw_txt to raw_date_parquet.
