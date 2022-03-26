@@ -14,13 +14,12 @@ to unzip those files in batch:
 ```
 unzip -d /dir/ *.zip
 ```
-the snapshot is shown as below:
-![Screen Shot 2022-03-26 at 7 29 14 PM](https://user-images.githubusercontent.com/97269758/160237363-cd8412ba-7d02-44dd-b8d4-c6c3ebce09d0.png)
-
 to transfer those unzipped files to specific s3 bucket:
 ```
 aws s3 cp d:/data s3://<bucket name>/raw --recursive
 ```
 the snapshot of s3 bucket as shown as below:
+
+![Screen Shot 2022-03-26 at 7 29 14 PM](https://user-images.githubusercontent.com/97269758/160237363-cd8412ba-7d02-44dd-b8d4-c6c3ebce09d0.png)
 
 ![Screen Shot 2022-03-26 at 7 30 41 PM](https://user-images.githubusercontent.com/97269758/160237427-67374731-e2b6-45f9-8024-ff87a37be06f.png)
