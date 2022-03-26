@@ -23,7 +23,7 @@ the snapshot of s3 bucket as shown as below:
 
 ![1](https://user-images.githubusercontent.com/97269758/160239260-d6dee628-b269-48d9-b65f-11dfbfe54914.png)
 
-![Screen Shot 2022-03-26 at 7 30 41 PM](https://user-images.githubusercontent.com/97269758/160237427-67374731-e2b6-45f9-8024-ff87a37be06f.png)
+![2](https://user-images.githubusercontent.com/97269758/160239361-ae467f9b-00a9-4310-bc19-913c923dec56.png)
 
 compression is very important for data processing, choosing the right compression algorithm greatly saves time and cost.
 for this case, we choose parquet as the data format, snappy as the compression algorithm. Meanwhile, data partitioning is another important factor in terms of accelerating query speed as well as saving cost.
