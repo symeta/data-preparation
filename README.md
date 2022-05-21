@@ -1,8 +1,4 @@
-# data-preparation
-
-this doc is aiming at describing the process of dealing with vast volume of raw data preparation for the downstream analytics.
-
-## raw data pull from source
+# raw data pull from source
 for customers from mainland China, Baidu Net Disk is highly probable to used to store the raw data. As a result, the first step in terms of data preparation is to pull the raw data that is stored on Baudi Net Disk to aws S3.
 
 network route is designed as below to achieve an optimized route to transfer these data.
