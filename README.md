@@ -152,9 +152,27 @@ sudo -u ec2-user -i
 cat /home/ec2-user/.ssh/authorized_keys
 ```
 
+Get access the the endpint through local terminal by executing the following command:
+
+```ssh
+ssh -i ~/Desktop/mar28.pem glue@ec2-52-81-95-176.cn-north-1.compute.amazonaws.com.cn -t gluepyspark3
+```
 
 # Transform Field Value mapping to different dictionary sets
 
 
+```py
+from pyspark.sql.functions import input_file_name
+from pyspark.sql.functions import substring
+from pyspark.sql.functions import when
 
+df = datasource0.toDF().withColumn("date",substring(input_file_name(), 19, 8))
+
+df2 = df.withColumn("new_gender", when(df.gender == "M","Male")
+                                 .when(df.gender == "F","Female")
+                                 .when(df.gender.isNull() ,"")
+                                 .otherwise(df.gender))
+
+datasource1 = datasource0.fromDF(df2, glueContext, "datasource1")
+```
 
