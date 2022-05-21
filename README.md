@@ -129,7 +129,29 @@ datasink5 = glueContext.write_dynamic_frame.from_catalog(frame = resolvechoice4,
 job.commit()
 ```
 
-### 
+### debug
+
+Debugging is achieved through Dev endpoints
+
+<img width="253" alt="Screen Shot 2022-05-21 at 1 26 02 PM" src="https://user-images.githubusercontent.com/97269758/169636936-28da63d9-d1af-42c3-86dc-1678bd75fb52.png">
+
+
+<img width="905" alt="Screen Shot 2022-05-21 at 1 34 27 PM" src="https://user-images.githubusercontent.com/97269758/169637228-d0c1f646-2998-45e4-b7af-fcde2faa24e8.png">
+
+
+<img width="906" alt="Screen Shot 2022-05-21 at 1 34 44 PM" src="https://user-images.githubusercontent.com/97269758/169637233-5bb6742c-2f3b-4912-9077-3f32eac6abfd.png">
+
+<img width="921" alt="Screen Shot 2022-05-21 at 1 35 29 PM" src="https://user-images.githubusercontent.com/97269758/169637251-b9f4d0e0-43f3-4268-bde3-aa084abb2683.png">
+
+
+
+SSH public key could be acquired by executing the following command in ec2 instance:
+
+```ssh
+sudo -u ec2-user -i
+cat /home/ec2-user/.ssh/authorized_keys
+```
+
 
 # Transform Field Value mapping to different dictionary sets
 
