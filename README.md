@@ -181,3 +181,6 @@ df2 = df.withColumn("new_gender", when(df.gender == "M","Male")
 datasource1 = datasource0.fromDF(df2, glueContext, "datasource1")
 ```
 
+# Guidance
+https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-partitions.html
+https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pyspark-extensions-dynamic-frame-writer.html
