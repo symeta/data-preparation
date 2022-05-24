@@ -124,9 +124,14 @@ resolvechoice3 = ResolveChoice.apply(frame = selectfields2, choice = "MATCH_CATA
 
 resolvechoice4 = ResolveChoice.apply(frame = resolvechoice3, choice = "make_struct", transformation_ctx = "resolvechoice4")
 
-datasink5 = glueContext.write_dynamic_frame.from_catalog(frame = resolvechoice4, database = "msjyetlnew", table_name = "destination0516", transformation_ctx = "datasink5")
+datasink5 = glueContext.write_dynamic_frame.from_catalog(frame = resolvechoice4, database = "msjyetlnew", table_name = "destination0516", additional_options = {"partitionKeys":["date"]},transformation_ctx = "datasink5")
 
 job.commit()
+```
+After the job has been succefully executed, switch to athena console and execute the below command:
+
+```sql
+msck repair table destination0516;
 ```
 
 ### debug
